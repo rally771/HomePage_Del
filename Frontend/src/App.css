@@ -1,0 +1,98 @@
+#root{
+  width: 100%;
+}
+
+@font-face {
+  font-family: "stolzl_bold";
+  src: url("../src/assets/fonts/stolzl_bold.otf");
+}
+@font-face {
+  font-family: "stolzl_regular";
+  src: url("../src/assets/fonts/stolzl_regular.otf");
+}
+@font-face {
+  font-family: "stolzl_medium";
+  src: url("../src/assets/fonts/stolzl_medium.otf");
+}
+
+.fs-13{
+  font-size: 13px;
+}
+
+
+.bold{
+  font-family: "stolzl_bold";
+  font-weight: initial;
+}
+.regular{
+  font-family: "stolzl_regular";
+  font-weight: initial;
+}
+.medium{
+  font-family: "stolzl_medium";
+  font-weight: initial;
+}
+
+.banner{
+  height: 500px;
+}
+.white{
+  color:white
+}
+.fs-60{
+  font-size: 60px;
+}
+
+.banner-text {
+  margin-top: 9.7rem;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.navBg{
+  background-color: #293578;
+}
+
+.navSec{
+  position: relative;
+}
+.navContent{
+  position:relative;
+}
+
+.navSec::after {
+  content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1%;
+    height: 100%;
+    background-color: white;
+    transform: skewY(-109deg);
+    transform-origin: left;
+    z-index: 1;
+}
+
+.card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 50, 0.7), transparent);
+  color: white;
+}
+
+.orange-box {
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #1e1666;
+}
+
+.getintouch{
+  background: linear-gradient(178deg, #07114b, #000);
+}
