@@ -2,7 +2,9 @@
 import './App.css'
 import Nav from './layouts/Header'
 import HomePage from './pages/Home'
-import {ContactUs , Footer} from './layouts/Footer'
+import SearchDetails from './pages/SearchResults';
+import { Routes, Route } from 'react-router-dom';
+import {Footer} from './layouts/Footer'
 
 
 function App() {
@@ -10,7 +12,10 @@ function App() {
   return (
     <>
     <Nav/>
-    <HomePage/>
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/search-details" element={<SearchDetails/>} />
+    </Routes>
     <Footer/>
     </>
   )

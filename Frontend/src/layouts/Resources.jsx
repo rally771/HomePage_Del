@@ -1,7 +1,41 @@
-
-
+import { useEffect,useState } from "react"
+import axios from "axios"
 
 export default function Resources() {
+
+  const [categories, setCategories] = useState();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Function to fetch data
+    const fetchResourceCategories = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get('https://ddic.hgsinteractive.com/api/home-resources');
+        setCategories(response.data);
+        setError(null);
+        console.log(response.data)
+      } catch (err) {
+        setError('Failed to fetch resource categories');
+        console.error('Error fetching data:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    // Call the function
+    fetchResourceCategories();
+  }, []);
+  if (loading) {
+    return <div>Loading resource categories...</div>;
+  }
+
+  // Render error state
+  if (error) {
+    return <div className="error">Error: {error}</div>;
+  }
+
   return (
     <section className="container-fluid py-5" id="resource">
       <div className="row">
@@ -18,17 +52,19 @@ export default function Resources() {
             Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
           </p>
           </div>
-          
+          {
+          Array.isArray(categories) ? (
 
           <div className="row g-4">
-            {[1, 2, 3, 4].map((item) => (
-              <div key={item} className="col-md-3 pe-0 cardResource">
+            
+            {categories.map((item) => (
+              <div key={item.nid[0].value} className="col-md-3 pe-0 cardResource">
                 <div className="card h-100 shadow-sm">
-                  <img src={`/img/${item}.png`} alt={`Resource ${item}`} className="card-img-top"/>
+                  <img src={item.field_image[0].url} className="card-img-top"/>
                   <div className="card-body">
-                    <h5 className="card-title bold">Lorem ipsum dolor sit amet, consectetur adipiscing</h5>
+                    <h5 className="card-title bold">{item.title[0].value}</h5>
                     <p className="card-text text-muted regular mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                      {item.body[0].value}
                     </p>
                     <button className="btn btn-link text-warning p-0 d-inline-flex align-items-center">
                       Read More
@@ -37,7 +73,15 @@ export default function Resources() {
                 </div>
               </div>
             ))}
+            
           </div>
+          ):(
+             <div>
+          <p>Data received but not in expected format.</p>
+          <pre>{JSON.stringify(categories, null, 2)}</pre>
+        </div>
+          )
+          }
         </div>
       </div>
 

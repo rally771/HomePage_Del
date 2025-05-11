@@ -10,9 +10,12 @@ export default function Banner (){
                 With A History Of
                 Excellence
                 </p>
-                <p>
-                    
+                <p className="bannerDescr regular">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et perferendis reiciendis est sequi quidem. Soluta, exercitationem provident
                 </p>
+                <button className="explore">
+                    
+                </button>
                 </div>
             </div>
         </div>
