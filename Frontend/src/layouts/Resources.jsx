@@ -22,12 +22,12 @@ export default function Resources() {
 
           <div className="row g-4">
             {[1, 2, 3, 4].map((item) => (
-              <div key={item} className="col-md-3 pe-0">
+              <div key={item} className="col-md-3 pe-0 cardResource">
                 <div className="card h-100 shadow-sm">
                   <img src={`/img/${item}.png`} alt={`Resource ${item}`} className="card-img-top"/>
                   <div className="card-body">
-                    <h5 className="card-title fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing</h5>
-                    <p className="card-text text-muted small mb-3">
+                    <h5 className="card-title bold">Lorem ipsum dolor sit amet, consectetur adipiscing</h5>
+                    <p className="card-text text-muted regular mb-3">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </p>
                     <button className="btn btn-link text-warning p-0 d-inline-flex align-items-center">

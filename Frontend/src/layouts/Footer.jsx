@@ -2,7 +2,7 @@ export function ContactUs(){
     return (
     <section className="getintouch text-white py-5">
       <div className="container-fluid text-center py-2">
-        <h2 className="bold mb-3">Get In Touch</h2>
+        <h2 className="bold">Get In Touch</h2>
         <p className="mb-4 regular">Need to get in touch with our Support or Sales team?</p>
         <button className="btn btn-warning text-white regular">
           Get Quote
