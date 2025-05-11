@@ -2,13 +2,16 @@ import WorldMap from "../assets/img/worldmap.png"
 export default function GlobeSection(){
     return (
         <section className="bg-light py-5">
-          <div className="container-fluid">
-            <h2 className="fw-bold mb-3 text-center">
-              <span className="border-start border-3 border-warning ps-2">We Are Widely Spread Across The Globe</span>
+          <div className="container-fluid globalSection">
+            <div className="content-box">
+              <h2 className="bold mb-3 text-center">
+              <span className="ps-2">We Are Widely Spread Across The Globe</span>
             </h2>
-            <p className="text-center text-muted mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="text-center text-muted mb-5 regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             
-            <div className="position-relative mx-5 px-4">
+            </div>
+
+            <div className="position-relative mapSection">
               <img src={WorldMap} alt="World Map" className="img-fluid" />
               
               <div className="position-absolute" style={{ top: "25%", left: "25%" }}>

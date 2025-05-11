@@ -1,9 +1,13 @@
 const ProductSearch = () => {
     return (
-      <section className="container position-relative" style={{ marginTop: "-50px", zIndex: "20" }}>
+      <section className="container position-relative" style={{ marginTop: "-110px", zIndex: "20" }}>
+        <div className="productCard row">
+          <div className="col-11 mx-auto">
+
+          
         <div className="row">
           <div className="col-md-2 navBg">
-            <div className="mb-3">
+            <div className="my-2 py-1">
               <span className="white  d-inline-flex align-items-center">
                  Product Search
               </span>
@@ -39,6 +43,8 @@ const ProductSearch = () => {
                 </div>
               </div>
             </div>
+            </div>
+         </div>   
       </section>
     );
   };

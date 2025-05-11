@@ -1,10 +1,33 @@
 const FeaturedProducts = () => {
   return (
-    <div className="container my-5">
-      <div className="row g-4">
+    <div className="container-fluid my-5 overflow-hidden pe-0">
+      <div className="row">
+        <div className="col-md-12">
+          <div className="container-fluid position-relative">
+            <div className="row">
+              <div className="col-md-10">
+                  <p className="bold fs-60 compText">
+                    Competitive Wireline Innovation
+                    With A Focus On Quality
+                  </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-7 ms-5 place-items-center">
+                    <span className="orangeLine">&nbsp;</span>
+              </div>
+            </div>
+            <img src="compPipe.png" className="position-absolute bottom-0 end-0" alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-11 mx-auto px-4 mt-4 pt-3">
+          <div className="container-fluid">
+                  <div className="row g-4">
         {/* Left Large Card */}
-        <div className="col-md-6">
-          <div className="card h-100 text-white position-relative">
+        <div className="col-md-6 pe-4">
+          <div className="card text-white position-relative">
             <img
               src="tubing.png"
               className="card-img h-100"
@@ -23,7 +46,7 @@ const FeaturedProducts = () => {
         </div>
 
         {/* Right Stacked Cards */}
-        <div className="col-md-6 d-flex flex-column gap-4">
+        <div className="col-md-6 d-flex flex-column gap-4 mt-5 ps-0 pe-4 pt-4">
           {[{
             title: "GS Pulling Tool",
             img: "gspulling.png",
@@ -50,13 +73,19 @@ const FeaturedProducts = () => {
           ))}
         </div>
       </div>
-
-      {/* View All Button */}
-      <div className="text-center mt-4">
+          </div>
+        </div>
+      </div>
+      <div className="row row mt-4 pt-2">
+        <div className="col-12">
+          <div className="text-center mt-4">
         <button className="btn btn-primary px-4">
           View All &nbsp; &rarr;
         </button>
       </div>
+        </div>
+      </div>
+
     </div>
   );
 };

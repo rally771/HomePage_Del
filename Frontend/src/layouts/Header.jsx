@@ -4,12 +4,12 @@ export default function Nav() {
       <header className="bg-white shadow">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-3 px-3">
+            <div className="col-md-3 px-4 py-4 mb-0 my-1">
               <img src="logo.png" alt="HGS Logo" height="83" />
             </div>
-            <div className="col-md-8 offset-md-1 text-end">
+            <div className="col-md-8 offset-md-1 text-end d-flex flex-column">
               <div className="row ">
-                <div className="col-md-12 navBg white regular navSec">
+                <div className="navBg white regular navSec">
                   <div className="navContent">
                   <span className="me-3 small">SUSTAINABILITY</span>
                   <span className="me-3 small">CAREERS</span>
@@ -18,9 +18,9 @@ export default function Nav() {
                 </div>
 
               </div>
-              <div className="row">
-                <div className="col12">
-                  <nav className="navbar navbar-expand-lg navbar-light regular">
+              <div className="row flex-grow-1 ">
+                <div className="col-12">
+                  <nav className="navbar navbar-expand-lg navbar-light regular h-100">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                       <span className="navbar-toggler-icon"></span>
                     </button>

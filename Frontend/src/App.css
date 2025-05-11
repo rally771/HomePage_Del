@@ -44,20 +44,26 @@
 }
 
 .banner-text {
-  margin-top: 9.7rem;
-  font-size: 47px;
-  line-height: 48px;
+      margin-top: 11.7rem;
+    font-size: 60px;
+    line-height: 72px;
 }
 
 .navBg{
   background-color: #293578;
 }
 
-.navSec{
-  position: relative;
+.navSec {
+    position: relative;
+    align-content: center;
+    height: 2.6rem;
 }
 .navContent{
   position:relative;
+}
+
+.navContent span{
+  margin-right:2.5rem;
 }
 
 .navSec::after {
@@ -65,10 +71,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 1%;
+    width: 2%;
     height: 100%;
     background-color: white;
-    transform: skewY(-109deg);
+    transform: skewY(-110deg);
     transform-origin: left;
     z-index: 1;
 }
@@ -95,4 +101,68 @@
 
 .getintouch{
   background: linear-gradient(178deg, #07114b, #000);
+}
+
+.nav-item{
+  margin-left: 32px;
+}
+.nav-item:last-child{
+  margin-right: 11px;
+}
+
+.compText{
+      margin-top: 7.2%;
+    padding-left: 6.2%;
+    font-size: 71px;
+    line-height: 95px;
+
+}
+
+.orangeLine{
+  display: block;
+    width: 10px;
+    height: 94px;
+    background: orange;
+}
+
+.globalSection{
+  padding-top: 6.6rem;
+}
+.content-box{
+    margin-top: 40px;
+    width: 37%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-box h2{
+  font-size:48px;
+}
+
+.content-box p{
+  font-size: 20px;
+    margin-top: 22px;
+}
+
+.mapSection{
+  margin-top: 3rem;
+    width: 83%;
+    margin-left: 165px;
+}
+.resourceDiv{
+  width: 88%;
+}
+
+.resourceContent{
+      padding-left: 2rem;
+    margin-top: 1.4rem;
+}
+
+.resourceContent h2{
+    font-size: 48px;
+}
+
+.resourceContent p {
+
+font-size: 16px;
+    width: 75%;
 }
