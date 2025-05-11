@@ -1,7 +1,7 @@
 import WorldMap from "../assets/img/worldmap.png"
 export default function GlobeSection(){
     return (
-        <section className="bg-light py-5">
+        <section className="bg-light py-5" id="globeSection">
           <div className="container-fluid globalSection">
             <div className="content-box">
               <h2 className="bold mb-3 text-center">

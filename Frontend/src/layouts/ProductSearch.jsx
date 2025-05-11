@@ -1,6 +1,6 @@
 const ProductSearch = () => {
     return (
-      <section className="container position-relative" style={{ marginTop: "-110px", zIndex: "20" }}>
+      <section className="container-fluid position-relative" id="productSearch" style={{ marginTop: "-110px", zIndex: "20" }}>
         <div className="productCard row">
           <div className="col-11 mx-auto">
 

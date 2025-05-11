@@ -3,7 +3,7 @@
 
 export default function Resources() {
   return (
-    <section className="container-fluid py-5">
+    <section className="container-fluid py-5" id="resource">
       <div className="row">
         <div className="resourceDiv mx-auto">
           <div className="resourceContent">

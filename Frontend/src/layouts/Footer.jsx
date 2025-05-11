@@ -1,6 +1,6 @@
 export function ContactUs(){
     return (
-    <section className="getintouch text-white py-5">
+    <section className="getintouch text-white py-5" id="aboutus">
       <div className="container-fluid text-center py-2">
         <h2 className="bold">Get In Touch</h2>
         <p className="mb-4 regular">Need to get in touch with our Support or Sales team?</p>

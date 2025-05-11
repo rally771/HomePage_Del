@@ -1,6 +1,6 @@
 const FeaturedProducts = () => {
   return (
-    <div className="container-fluid my-5 overflow-hidden pe-0">
+    <div className="container-fluid my-5 overflow-hidden pe-0" id="product">
       <div className="row">
         <div className="col-md-12">
           <div className="container-fluid position-relative">
