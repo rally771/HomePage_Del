@@ -104,17 +104,20 @@ button.explore span{
     z-index: 1;
 }
 
-.countryName::after {
-  content: "";
+
+.countryName:before {
+	     z-index: -1;
+    content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 2%;
+    left: -5px;
+    top: 0;
     height: 100%;
-    background-color: white;
-    transform: skewY(-110deg);
-    transform-origin: left;
-    z-index: 1;
+    width: 100%;
+    background-color: inherit;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
 }
 
 .card-img-overlay {
@@ -169,7 +172,7 @@ button.explore span{
 }
 .content-box{
     margin-top: 40px;
-    width: 37%;
+    width: 48%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -190,12 +193,15 @@ button.explore span{
 }
 .countryName{
 padding: 7px 19px;
+    position: relative;
+    z-index: 2;
 }
 
 .pin{
   position: absolute;
     top: -20px;
     left: -17px;
+    z-index: 3;
 }
 
 .text-left{
@@ -277,7 +283,9 @@ text-align: center;
     border: none;
     color: #fff;
 }
-
+.input-group .btn{
+  background: #fa5b26;
+}
 .arrow{
   background:url(whiteRightArrow.png);
   background-repeat: no-repeat;
@@ -333,13 +341,60 @@ transition: transform 0.3s ease-in-out;
 }
 
 
+#productSearch{
+    margin-top: -5.6%;
+    z-index: 20; 
+  }
 
-@media (min-width: 576px) { 
+
+@media (max-width: 600px) { 
 
   .fs-m-10{
     font-size: 10px;
   }
 
-  
+  .banner-text{
+    margin:auto;
+    font-size:24px;
+    line-height: 25px;
+  }
+
+  .bannerDescr{
+    font-size: 12px;
+    line-height: 11px;
+  }
+
+  button.explore{
+    padding: 10px;
+    font-size: 10px;
+    margin-top: auto;
+  }
+
+  .mapSection{
+    margin:auto;
+  }
+.text-left-title{
+  font-size: 20px;
+}
+  .text-left{
+    left: 0px;
+    bottom: 0px;
+  }
+
+  #productSearch{
+    margin-top:0%;
+  }
+
+  .compText{
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 1.5rem;
+  }
+  .orangeLine{
+    margin-bottom: 11.2rem;
+  }
+  .navSec::after {
+    content: none;
+  }
 
  }

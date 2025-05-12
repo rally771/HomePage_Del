@@ -11,7 +11,7 @@ export default function GlobeSection(){
             
             </div>
 
-            <div className="position-relative mapSection regular fs-16 white">
+            <div className="position-relative mapSection regular fs-16 fs-m-10 white">
               <img src={WorldMap} alt="World Map" className="img-fluid" />
               <div className="position-absolute" style={{ top: "19.4%", left: "14.6%" }}>
                 <span className="countryName navBg">CANADA</span>
@@ -58,7 +58,7 @@ export default function GlobeSection(){
               
               <div className="mt-5 position-absolute text-left">
               <div className="text-left-content">
-                <div className="tet-left-title">23+</div>
+                <div className="text-left-title">23+</div>
                 <p className="text-muted mt-2 mx-auto" style={{ maxWidth: "400px" }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
                 </p>

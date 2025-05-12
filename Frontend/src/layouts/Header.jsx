@@ -1,5 +1,22 @@
+import {useContext } from "react"
+import DataContext from '../context/DataContext';
+
 export default function Nav() {
-    
+    const { data, loading, error } = useContext(DataContext);
+  
+  
+
+
+  if (loading) {
+    return <div>Loading resource categories...</div>;
+  }
+
+  // Render error state
+  if (error) {
+    return <div className="error">Error: {error}</div>;
+  }
+  const categories = data.data.menuData.menu
+  console.log(categories)
   return (
     <>
       <header className="bg-white shadow">
@@ -27,24 +44,13 @@ export default function Nav() {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                       <ul className="navbar-nav">
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">HOME</a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">ABOUT US</a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">PRODUCTS</a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">SERVICES</a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">RESOURCES</a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">CONTACT US</a>
-                        </li>
+                        {categories.map((item)=>(
+                          <li key={item.id} className="nav-item">
+                            <a className="nav-link" href="#">{item.title}</a>
+                        </li>)
+                        )}
+                        
+                        
                       </ul>
                     </div>
                   </nav>

@@ -1,32 +1,13 @@
-import { useEffect,useState } from "react"
-import axios from "axios"
+import {useContext } from "react"
+import DataContext from '../context/DataContext';
+
 
 export default function Resources() {
+    const { data, loading, error } = useContext(DataContext);
+  
+  
 
-  const [categories, setCategories] = useState();
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    // Function to fetch data
-    const fetchResourceCategories = async () => {
-      try {
-        setLoading(true);
-        const response = await axios.get('https://ddic.hgsinteractive.com/api/home-resources');
-        setCategories(response.data);
-        setError(null);
-        console.log(response.data)
-      } catch (err) {
-        setError('Failed to fetch resource categories');
-        console.error('Error fetching data:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    // Call the function
-    fetchResourceCategories();
-  }, []);
   if (loading) {
     return <div>Loading resource categories...</div>;
   }
@@ -35,7 +16,8 @@ export default function Resources() {
   if (error) {
     return <div className="error">Error: {error}</div>;
   }
-
+  const categories = data.data.dataApi
+  console.log(categories)
   return (
     <section className="container-fluid py-5" id="resource">
       <div className="row">
@@ -67,7 +49,7 @@ export default function Resources() {
                       {item.body[0].value}
                     </p>
                     <button className="readMore fs-16 regular d-inline-flex align-items-center">
-                      Read More <span className="arrow">&nbsp;</span>
+                      Read More <img src="whiteRightArrow.png" className="arrowImg" alt="" srcset="" />
                     </button>
                   </div>
                 </div>
