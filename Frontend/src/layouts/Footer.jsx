@@ -4,8 +4,8 @@ export function ContactUs(){
       <div className="container-fluid text-center py-2">
         <h2 className="bold">Get In Touch</h2>
         <p className="mb-4 regular">Need to get in touch with our Support or Sales team?</p>
-        <button className="btn btn-warning text-white regular">
-          Get Quote
+        <button className="getInTouch text-white regular">
+          Get Quote <img src="whiteRightArrow.png" className="arrowImg" alt="" srcset="" />
         </button>
       </div>
     </section>

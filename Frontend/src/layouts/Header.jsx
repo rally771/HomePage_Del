@@ -1,5 +1,6 @@
 import {useContext } from "react"
 import DataContext from '../context/DataContext';
+import { Link } from "react-router-dom";
 
 export default function Nav() {
     const { data, loading, error } = useContext(DataContext);
@@ -46,7 +47,10 @@ export default function Nav() {
                       <ul className="navbar-nav">
                         {categories.map((item)=>(
                           <li key={item.id} className="nav-item">
-                            <a className="nav-link" href="#">{item.title}</a>
+                            {
+                              item.id == "home"?<Link className="nav-link" to="/">{item.title}</Link> :<a className="nav-link" href="#">{item.title}</a>
+                            }
+                            
                         </li>)
                         )}
                         

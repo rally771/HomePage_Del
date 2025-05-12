@@ -286,6 +286,25 @@ text-align: center;
 .input-group .btn{
   background: #fa5b26;
 }
+
+.getInTouch{
+  margin: auto;
+    margin-top: 27px;
+    height: 42px;
+    background: #fa5b26;
+    border: none;
+    color: #fff;
+}
+
+.viewAll{
+    margin-top: 27px;
+    height: 42px;
+    background: #293578;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+}
+
 .arrow{
   background:url(whiteRightArrow.png);
   background-repeat: no-repeat;

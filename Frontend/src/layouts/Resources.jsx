@@ -25,8 +25,8 @@ export default function Resources() {
           <div className="resourceContent">
             <div className="d-flex justify-content-between align-items-center mb-4">
             <h2 className="bold">Resources</h2>
-            <button className="regular d-inline-flex align-items-center">
-              View All
+            <button className="regular viewAll d-inline-flex align-items-center">
+              View All <img src="whiteRightArrow.png" className="arrowImg" alt="" srcset="" />
             </button>
           </div>
           <p className="text-muted regular">
