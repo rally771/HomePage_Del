@@ -45,6 +45,7 @@ const ProductSearch = () => {
           <div className="row">
             <div className="col-md-2 navBg">
               <div className="my-2 py-1">
+                <img src='productSearchIcon.png'/>
                 <span className="white d-inline-flex align-items-center bold">
                   Product Search
                 </span>

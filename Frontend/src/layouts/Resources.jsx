@@ -66,8 +66,8 @@ export default function Resources() {
                     <p className="card-text text-muted regular mb-3">
                       {item.body[0].value}
                     </p>
-                    <button className="btn btn-link text-warning p-0 d-inline-flex align-items-center">
-                      Read More
+                    <button className="readMore fs-16 regular d-inline-flex align-items-center">
+                      Read More <span className="arrow">&nbsp;</span>
                     </button>
                   </div>
                 </div>

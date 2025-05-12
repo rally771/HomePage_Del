@@ -33,7 +33,7 @@ const FeaturedProducts = () => {
               className="card-img h-100"
               alt="Tubing Gauge"
             />
-            <div className="card-content d-flex flex-column justify-content-end p-4 bg-gradient-overlay">
+            <div className="card-content d-flex flex-column justify-content-end bg-gradient-overlay">
               <h5 className="card-title">Tubing Gauge</h5>
               <p className="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -60,7 +60,7 @@ const FeaturedProducts = () => {
                 className="card-img h-100"
                 alt={item.title}
               />
-              <div className="card-content d-flex flex-column justify-content-end p-3 bg-gradient-overlay">
+              <div className="card-content-right d-flex flex-column justify-content-end bg-gradient-overlay">
                 <h5 className="card-title">{item.title}</h5>
                 <p className="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
