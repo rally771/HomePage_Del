@@ -340,6 +340,10 @@ transition: transform 0.3s ease-in-out;
 
 }
 
+.arrowImg{
+  margin-left: 0.5rem;
+}
+
 
 #productSearch{
     margin-top: -5.6%;
